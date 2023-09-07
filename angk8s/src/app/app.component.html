@@ -1,0 +1,60 @@
+<div class="demo">
+  <div class="box">
+    <div class="content">
+      <div class="heading">
+        <h1> Angular Demo Application </h1>
+      </div>
+
+      <hr>
+
+      <div class="host-info" >
+        <div class="flask">
+          <span  class="flex-host">
+            <div class="flex">
+              <h3 class="left-head"> Flask Container Host Name :</h3>
+              <h4 class="right-val">{{host_info.flask_host}}</h4>
+            </div>
+            <div class="flex">
+              <h3 class="left-head"> Flask Container IP Address :</h3>
+              <h4 class="right-val">{{host_info.flask_ip}}</h4>
+            </div>
+          </span>
+        </div>
+        <div class="db-host">
+          <span class="flex-host">
+            <div class="flex">
+              <h3 class="left-head"> Postgres DB Container Host Name :</h3>
+              <h4 class="right-val">{{host_info.db_host}}</h4>
+            </div>
+
+            <div class="flex">
+              <h3 class="left-head"> Postgres DB Container IP Address :</h3>
+              <h4 class="right-val">{{host_info.db_ip}}</h4>
+          </div>
+          </span>
+        </div>
+      </div>
+
+      <hr>
+      <div>
+      
+          <input id='record' type="text" [(ngModel)]="record" placeholder="Value">
+          <button  class="add-btn"  (click)="onAdd()">Add Records</button>
+        </div>
+
+        <div>
+          <table border="1" class="table">
+            <tr>
+              <th class="th">Key</th>
+              <th class="th">Value</th>
+            </tr>
+            <tr *ngFor="let item of all_db_records">
+              <td>{{item.id}}</td>
+              <td>{{item.value}}</td>
+              <td><button  class="del-btn"  (click)="onDelete(item.id)">Delete</button></td>
+            </tr>
+          </table> 
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,68 @@
+.demo{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.heading{
+    color: rgb(240, 214, 214);
+    font-style: italic;
+
+    padding: 0px 100px;
+    display:  flex;
+    justify-content: center;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    margin: 0px 60px;
+    width: 30vw;
+}
+
+.left-head{
+margin: 0px 5px;
+color: rgb(200, 69, 212);
+}
+
+.right-val{
+color: rgb(28, 160, 236);
+}
+
+.flex-host{
+    display: flex;
+    align-items: flex-start;
+}
+
+.add-btn{
+    border: 1px solid black;
+    padding: 7px 30px;
+    font-size: medium;
+    background-color: green;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+
+.del-btn{
+    border: 1px solid black;
+    padding: 7px 30px;
+    font-size: medium;
+    background-color: rgb(151, 21, 21);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+#record{
+    height: 25px;
+    margin: 0px 5px;
+}
+
+.table{
+    margin-top: 20px;
+    color: rgb(212, 255, 255);
+}
+
+.th{
+    width: 200px;
+}
